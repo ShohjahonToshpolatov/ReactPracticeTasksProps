@@ -1,5 +1,7 @@
-import TeacherCard from "./components/TeacherCard";
 import StudentCard from "./components/StudentCard";
+import TeacherCard from "./components/TeacherCard";
+import ProfileCard from "./components/ProfileCard";
+
 import "./App.css";
 
 function App() {
@@ -31,6 +33,32 @@ function App() {
           subject="Informatika"
           experience={3}
           image="https://i.pravatar.cc/150?img=14"
+        />
+      </div>
+
+      <div>
+        <ProfileCard
+          name="Ali"
+          image="https://i.pravatar.cc/150?img=11"
+          job="Frontend Developer"
+          city="Toshkent"
+          isOnline={true}
+        />
+
+        <ProfileCard
+          name="Vali"
+          image="https://i.pravatar.cc/150?img=13"
+          job="Designer"
+          city="Guliston"
+          isOnline={false}
+        />
+
+        <ProfileCard
+          name="Sardor"
+          image="https://i.pravatar.cc/150?img=15"
+          job="Backend Developer"
+          city="Samarqand"
+          isOnline={true}
         />
       </div>
     </div>
